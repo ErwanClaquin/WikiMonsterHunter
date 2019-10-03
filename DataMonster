@@ -9,7 +9,9 @@
         "displayName": "Rathian",
         "description": "That's a Rathian"
       }
-    }
+    },
+    "Star": 2,
+    "Game": "Monster Hunter World"
   },
   "Rathalos": {
     "Language": {
@@ -21,6 +23,176 @@
         "displayName": "Rathalos",
         "description": "That's a Rathalos"
       }
-    }
+    },
+    "Star": 2,
+    "Game": "Monster Hunter World"
+  },
+  "Grand Jagras": {
+    "Language": {
+      "FR": {
+        "displayName": "Grand Jagras",
+        "description": "C'est un Grand Jagras"
+      },
+      "EN": {
+        "displayName": "Grand Jagras",
+        "description": "That's a Grand Jagras"
+      }
+    },
+    "Star": 1,
+    "Game": "Monster Hunter World"
+  },
+  "Rathalas": {
+    "Language": {
+      "FR": {
+        "displayName": "Rathalos",
+        "description": "C'est un Rathalos"
+      },
+      "EN": {
+        "displayName": "Rathalos",
+        "description": "That's a Rathalos"
+      }
+    },
+    "Star": 2,
+    "Game": "Monster Hunter World"
+  },
+  "Rathalis": {
+    "Language": {
+      "FR": {
+        "displayName": "Rathalos",
+        "description": "C'est un Rathalos"
+      },
+      "EN": {
+        "displayName": "Rathalos",
+        "description": "That's a Rathalos"
+      }
+    },
+    "Star": 2,
+    "Game": "Monster Hunter World"
+  },
+  "Rathaloos": {
+    "Language": {
+      "FR": {
+        "displayName": "Rathalos",
+        "description": "C'est un Rathalos"
+      },
+      "EN": {
+        "displayName": "Rathalos",
+        "description": "That's a Rathalos"
+      }
+    },
+    "Star": 2,
+    "Game": "Monster Hunter World"
+  },
+  "Rathalaaas": {
+    "Language": {
+      "FR": {
+        "displayName": "Rathalos",
+        "description": "C'est un Rathalos"
+      },
+      "EN": {
+        "displayName": "Rathalos",
+        "description": "That's a Rathalos"
+      }
+    },
+    "Star": 2,
+    "Game": "Monster Hunter World"
+  },
+  "Rathaliis": {
+    "Language": {
+      "FR": {
+        "displayName": "Rathalos",
+        "description": "C'est un Rathalos"
+      },
+      "EN": {
+        "displayName": "Rathalos",
+        "description": "That's a Rathalos"
+      }
+    },
+    "Star": 2,
+    "Game": "Monster Hunter World"
+  },
+  "Rathaliiis": {
+    "Language": {
+      "FR": {
+        "displayName": "Rathalos",
+        "description": "C'est un Rathalos"
+      },
+      "EN": {
+        "displayName": "Rathalos",
+        "description": "That's a Rathalos"
+      }
+    },
+    "Star": 2,
+    "Game": "Monster Hunter World"
+  },
+  "Rathaliops": {
+    "Language": {
+      "FR": {
+        "displayName": "Rathalos",
+        "description": "C'est un Rathalos"
+      },
+      "EN": {
+        "displayName": "Rathalos",
+        "description": "That's a Rathalos"
+      }
+    },
+    "Star": 2,
+    "Game": "Monster Hunter World"
+  },
+  "Rathaliopois": {
+    "Language": {
+      "FR": {
+        "displayName": "Rathalos",
+        "description": "C'est un Rathalos"
+      },
+      "EN": {
+        "displayName": "Rathalos",
+        "description": "That's a Rathalos"
+      }
+    },
+    "Star": 2,
+    "Game": "Monster Hunter World"
+  },
+  "Rathaliqss": {
+    "Language": {
+      "FR": {
+        "displayName": "Rathalos",
+        "description": "C'est un Rathalos"
+      },
+      "EN": {
+        "displayName": "Rathalos",
+        "description": "That's a Rathalos"
+      }
+    },
+    "Star": 2,
+    "Game": "Monster Hunter World"
+  },
+  "Rathaliqeess": {
+    "Language": {
+      "FR": {
+        "displayName": "Rathalos",
+        "description": "C'est un Rathalos"
+      },
+      "EN": {
+        "displayName": "Rathalos",
+        "description": "That's a Rathalos"
+      }
+    },
+    "Star": 2,
+    "Game": "Monster Hunter World"
+  },
+  "Rathaliqsdssds": {
+    "Language": {
+      "FR": {
+        "displayName": "Rathalos",
+        "description": "C'est un Rathalos"
+      },
+      "EN": {
+        "displayName": "Rathalos",
+        "description": "That's a Rathalos"
+      }
+    },
+    "Star": 2,
+    "Game": "Monster Hunter World"
   }
 }

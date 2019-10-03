@@ -1,18 +1,29 @@
 import json
 
 
+def createMonster():
+    """Create all object monsters"""
+    listMonsters = []
+    with open("DataMonster") as dataMonster:
+        data = json.load(dataMonster)
+        for monster in data:
+            listMonsters.append(Monster(monster))
+    return listMonsters
+
+
 class Monster:
     """Deafult class of monster which will be display on screen.
     Contain all informtations about them
     TODO : add image, rarity """
 
     def __init__(self, name=""):
-        self.name = name.capitalize()
+        self.name = name.title()
+        self.game = None
         self.displayName = None
-        self.desciption = None
-
+        self.description = None
+        self.picture = None
+        self.star = None
         self.__assertNameValid()
-
         self.updateAllMonster()
 
     def __del__(self):
@@ -61,4 +72,57 @@ class Monster:
 
         dataMonster = json.load(fileDataMonster)
         self.displayName = dataMonster[self.name]["Language"][language]["displayName"]
-        self.desciption = dataMonster[self.name]["Language"][language]["description"]
+        self.description = dataMonster[self.name]["Language"][language]["description"]
+        self.star = dataMonster[self.name]["Star"]
+        self.game = dataMonster[self.name]["Game"]
+
+
+class Search:
+    def __init__(self, userSearch=None, listMonster=None):
+        self.userSearch = userSearch.lower()
+        self.listMonster = listMonster
+        self.listMonsterSearch = []
+
+    def __del__(self):
+        print("Deleted {obj}".format(obj=self))
+
+    def search(self):
+        listTri = []
+        listTri2 = []
+        verif = None
+        # On récupère les monstres qui contiennent dans leur nom le message donné par l'utilisateur
+        for monster in self.listMonster:
+            if self.userSearch in monster.name.lower():
+                listTri.append(monster.name)
+            monster.name.capitalize()
+        # On tri cette liste de telle sorte à obtenir les monstres ayant ce message au début de leur nom en premier
+        for monster in listTri:
+            for i in range(0, len(self.userSearch)):
+                if monster[i] == self.userSearch[i]:
+                    verif = True
+                else:
+                    verif = False
+                    break
+            if verif:
+                listTri2.append(monster)
+                listTri.remove(monster)
+                break
+        for monster in listTri:
+            listTri2.append(monster)
+
+        # On copie les monstres qui corresponde à notre recherche dans la liste de recherche
+        for monster in listTri2:
+            for monsters in self.listMonster:
+                if monster == monsters.name:
+                    self.listMonsterSearch.append(monsters)
+
+    def clean(self):
+        self.listMonsterSearch = []
+
+
+"""
+liste = createMonster()
+search = Search("rath", liste)
+search.search()
+for monster in search.listMonsterSearch :
+    print(monster.name)"""

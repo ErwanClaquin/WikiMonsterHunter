@@ -1,0 +1,38 @@
+{
+  "Rathian": {
+    "Language": {
+      "FR": {
+        "displayName": "Rathian",
+        "description": "C'est une Rathian"
+      },
+      "EN": {
+        "displayName": "Rathian",
+        "description": "That's a Rathian"
+      }
+    }
+  },
+  "Rathalos": {
+    "Language": {
+      "FR": {
+        "displayName": "Rathalos",
+        "description": "C'est un Rathalos"
+      },
+      "EN": {
+        "displayName": "Rathalos",
+        "description": "That's a Rathalos"
+      }
+    }
+  },
+  "Athorath":{
+  "Language": {
+      "FR": {
+        "displayName": "Rathalos",
+        "description": "C'est un Rathalos"
+      },
+      "EN": {
+        "displayName": "Rathalos",
+        "description": "That's a Rathalos"
+      }
+    }
+  }
+}

@@ -15,15 +15,13 @@ from kivy.core.window import Window
 
 from Monster import *
 
-# importations des sons:
-soundMenu = SoundLoader.load('nergigante-roar.mp3')
-
 
 class MenuWindow(Screen):
+
     def build(self):
         self.name = "Menu"
         # On joue un son pour l'écran principale:
-        soundMenu.play()
+        # TODO : soundMenu.play()
 
         # Image de l'écran principal :
         self.Img = Image(source='MHW_picture_FirstWindow.jpg', allow_stretch=True, keep_ratio=False)
@@ -41,7 +39,7 @@ class MenuWindow(Screen):
         sm.add_widget(self)
 
     def nextPage(self, instance):
-        soundMenu.stop()
+        # TODO : soundMenu.stop()
         sm.current = "Choice Level Monsters"
         sm.transition.direction = "left"
 
@@ -87,7 +85,7 @@ class ChoiceLevelMonsters(Screen):
     def previousPage(self, instance):
         sm.current = "Menu"
         sm.transition.direction = "right"
-        soundMenu.play()
+        # TODO : soundMenu.play()
 
     def pageToMH3(self, instance):
         sm.current = "MH3"
@@ -203,12 +201,15 @@ class MonsterApp(App):
         return sm
 
 
+# importations des sons:
+# TODO : soundMenu = SoundLoader.load("nergigante-roar.mp3")
+
+
 langue = "EN"
 listMonsters = createMonster()
 listMonsterHunter3 = []
 listMonsterHunterWorld = []
 listMonsterHunterWorldIceborn = []
-
 for i in range(0, len(listMonsters)):
     if listMonsters[i].game == "Monster Hunter 3":
         listMonsterHunter3.append(listMonsters[i])
